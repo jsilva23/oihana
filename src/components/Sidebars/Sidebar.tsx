@@ -1,35 +1,44 @@
 import styled from 'styled-components';
-import { FiMapPin, FiGrid, FiTag, FiSettings } from 'react-icons/fi';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { FiMapPin, FiGrid, FiSettings, FiUser } from 'react-icons/fi';
 
 const Sidebar = () => {
+  const router = useRouter();
+
   return (
     <StylesSidebar>
-      <header>
-        <h2>oihana</h2>
-      </header>
-
       <nav>
-        <ul>
-          <li>
-            <a href='/map-page'>
-              <FiMapPin />
-            </a>
+        <ul className='main-nav'>
+          <li className={router.pathname == '/' ? 'active' : ''}>
+            <Link href='/'>
+              <a>
+                <FiGrid size={35} />
+              </a>
+            </Link>
           </li>
-          <li>
-            <a href='/'>
-              <FiGrid />
-            </a>
+          <li className={router.pathname == '/map-page' ? 'active' : ''}>
+            <Link href='/map-page'>
+              <a>
+                <FiMapPin size={35} />
+              </a>
+            </Link>
           </li>
-          <li>
-            <a href=''>
-              <FiTag />
-            </a>
+          <li className={router.pathname == '/user-profile' ? 'active' : ''}>
+            <Link href='/user-profile'>
+              <a>
+                <FiUser size={35} />
+              </a>
+            </Link>
           </li>
-
-          <li>
-            <a href=''>
-              <FiSettings />
-            </a>
+        </ul>
+        <ul className='settings'>
+          <li className={router.pathname == '/settings' ? 'active' : ''}>
+            <Link href='/settings'>
+              <a>
+                <FiSettings size={25} />
+              </a>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -40,8 +49,52 @@ const Sidebar = () => {
 const StylesSidebar = styled.aside`
   height: 100%;
   padding: 32px 24px;
-  background: rgba(6, 70, 99);
+
+  background: #04293adf;
   border-radius: 16px;
+
+  nav {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+      list-style: none;
+
+      a {
+        color: #ddd;
+      }
+
+      .active {
+        a {
+          color: #ecb365;
+        }
+      }
+    }
+
+    .main-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      li {
+        margin-bottom: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .settings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 `;
 
 export default Sidebar;

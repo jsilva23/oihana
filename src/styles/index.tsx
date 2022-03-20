@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
   margin: 0 auto;
 
   @media screen and (min-width: 576px) {
@@ -27,23 +26,22 @@ export const Container = styled.div`
 
   .row {
     width: 100%;
-    height: 100%;
+    height: 85vh;
 
     display: grid;
-    grid-template-columns: 100px auto 350px;
+    grid-gap: 30px;
+    grid-template-columns: 80px auto 450px;
     grid-template-rows: auto;
     grid-template-areas: 'sidebar main right-side';
   }
-  .col {
-    height: 100%;
-    padding: 32px 10px;
-  }
+
   .row-map {
     width: 100%;
-    height: 100%;
+    height: 85vh;
 
     display: grid;
-    grid-template-columns: 100px auto;
+    grid-gap: 30px;
+    grid-template-columns: 80px auto;
     grid-template-rows: auto;
     grid-template-areas: 'sidebar main';
   }

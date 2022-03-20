@@ -1,5 +1,6 @@
 import Sidebar from '../Sidebars/Sidebar';
 import { Container } from '../../styles';
+import Header from '../Header';
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -7,14 +8,17 @@ type LayoutProps = {
 
 const LayoutMap = ({ children }: LayoutProps) => {
   return (
-    <Container>
-      <div className='row-map'>
-        <div className='col'>
-          <Sidebar />
+    <>
+      <Header />
+      <Container>
+        <div className='row-map'>
+          <div className='col'>
+            <Sidebar />
+          </div>
+          <div className='col'>{children}</div>
         </div>
-        <div className='col'>{children}</div>
-      </div>
-    </Container>
+      </Container>
+    </>
   );
 };
 
