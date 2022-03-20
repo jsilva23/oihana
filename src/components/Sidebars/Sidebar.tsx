@@ -11,28 +11,24 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <a href=''>
+            <a href='/map-page'>
               <FiMapPin />
-              Ver no mapa
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='/'>
               <FiGrid />
-              Ver Feed
             </a>
           </li>
           <li>
             <a href=''>
               <FiTag />
-              Publicar
             </a>
           </li>
 
           <li>
             <a href=''>
               <FiSettings />
-              Definições
             </a>
           </li>
         </ul>
@@ -42,11 +38,10 @@ const Sidebar = () => {
 };
 
 const StylesSidebar = styled.aside`
-  position: fixed;
   height: 100%;
-  width: 250px;
   padding: 32px 24px;
-  background: #011220;
+  background: rgba(6, 70, 99);
+  border-radius: 16px;
 `;
 
 export default Sidebar;
