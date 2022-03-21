@@ -2,10 +2,6 @@ import styled from 'styled-components';
 const Search = () => {
   return (
     <SearchWrapper>
-      <div className='search__header'>
-        <h2>Pesquisar</h2>
-      </div>
-
       <form>
         <div className='md-group'>
           <select className='md-input__text' required>
@@ -32,14 +28,6 @@ const SearchWrapper = styled.div`
   backdrop-filter: blur(2.1px);
   -webkit-backdrop-filter: blur(2.1px);
   padding: 32px 24px;
-
-  .search__header {
-    margin-bottom: 1rem;
-
-    h2 {
-      font-size: 18px;
-    }
-  }
 
   form {
     display: flex;

@@ -4,10 +4,6 @@ import { FiMapPin, FiGrid, FiTag, FiSettings } from 'react-icons/fi';
 const RightSidebar = () => {
   return (
     <SidebarBox>
-      <header>
-        <h2>oihana</h2>
-      </header>
-
       <nav>
         <ul>
           <li>
