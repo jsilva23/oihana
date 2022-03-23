@@ -24,10 +24,10 @@ const Search = () => {
 const SearchWrapper = styled.div`
   /* From https://css.glass */
   background: rgba(6, 70, 99, 0.16);
-  border-radius: 16px;
   backdrop-filter: blur(2.1px);
   -webkit-backdrop-filter: blur(2.1px);
   padding: 32px 24px;
+  border-radius: 10px;
 
   form {
     display: flex;
