@@ -13,7 +13,7 @@ const SidebarBox = styled.aside`
   height: 100%;
   padding: 32px 24px;
   /* From https://css.glass */
-  background: rgba(6, 70, 99, 0.16);
+  background: #e5edf3;
   backdrop-filter: blur(2.1px);
   -webkit-backdrop-filter: blur(2.1px);
 `;
