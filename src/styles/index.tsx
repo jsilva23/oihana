@@ -35,6 +35,12 @@ export const Container = styled.div`
     grid-template-areas: 'sidebar main right-side';
   }
 
+  .col {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
   .row-map {
     width: 100%;
     height: 85vh;
@@ -44,5 +50,27 @@ export const Container = styled.div`
     grid-template-columns: 80px auto;
     grid-template-rows: auto;
     grid-template-areas: 'sidebar main';
+
+    .show__map-filter {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 450;
+
+      padding: 10px 15px;
+      font-size: 2rem;
+      cursor: pointer;
+
+      background: #f4faff;
+      box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 5px;
+      }
+    }
   }
 `;

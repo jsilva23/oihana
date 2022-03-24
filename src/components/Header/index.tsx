@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import { FaRegHandshake } from 'react-icons/fa';
 import { MdHelp, MdNotifications, MdSell } from 'react-icons/md';
@@ -9,37 +10,47 @@ const Header = () => {
       <Container>
         <div className='row-header'>
           <div className='logo'>
-            <h1>OIHANA</h1>
+            <Link href='/'>
+              <h1>OIHANA</h1>
+            </Link>
           </div>
 
           <nav>
             <ul>
               <li>
-                <a href='/'>
-                  <MdSell size={25} />
-                  <span>Publicar</span>
-                </a>
+                <Link href='/announce'>
+                  <a>
+                    <MdSell size={25} />
+                    <span>Anunciar</span>
+                  </a>
+                </Link>
               </li>
 
               <li>
-                <a href='/map-page'>
-                  <FaRegHandshake size={25} />
-                  <span>Negociações</span>
-                </a>
+                <Link href='/negocitions'>
+                  <a>
+                    <FaRegHandshake size={25} />
+                    <span>Negociações</span>
+                  </a>
+                </Link>
               </li>
 
               <li>
-                <a href=''>
-                  <MdNotifications size={25} />
-                  <span>Notificações</span>
-                </a>
+                <Link href='/notifications'>
+                  <a>
+                    <MdNotifications size={25} />
+                    <span>Notificações</span>
+                  </a>
+                </Link>
               </li>
 
               <li>
-                <a href=''>
-                  <MdHelp size={25} />
-                  <span>Ajuda</span>
-                </a>
+                <Link href='/help'>
+                  <a>
+                    <MdHelp size={25} />
+                    <span>Ajuda</span>
+                  </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -62,7 +73,7 @@ const MainHeader = styled.header`
     h1 {
       font-family: 'Yellowtail', cursive;
       font-size: 3.6rem;
-      color: #ddd;
+      color: #f4faff;
     }
   }
 
@@ -78,10 +89,10 @@ const MainHeader = styled.header`
       }
       li {
         display: inline-block;
-        margin-left: 25px;
+        margin-left: 40px;
         a {
           text-decoration: none;
-          color: #ddd;
+          color: #f4faff;
           line-height: 1.5;
 
           display: flex;

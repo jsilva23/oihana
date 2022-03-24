@@ -50,8 +50,11 @@ const StylesSidebar = styled.aside`
   height: 100%;
   padding: 32px 24px;
 
-  background: #04293adf;
-  border-radius: 16px;
+  background: rgba(6, 70, 99, 0.90);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(6, 70, 99, 0.01);
 
   nav {
     height: 100%;
@@ -65,7 +68,7 @@ const StylesSidebar = styled.aside`
       list-style: none;
 
       a {
-        color: #ddd;
+        color: #f4faff;
       }
 
       .active {
