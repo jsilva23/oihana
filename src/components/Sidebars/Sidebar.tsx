@@ -47,14 +47,16 @@ const Sidebar = () => {
 };
 
 const StylesSidebar = styled.aside`
-  height: 100%;
+  position: fixed;
+  height: 85vh;
   padding: 32px 24px;
 
-  background: rgba(6, 70, 99, 0.90);
+  background: rgba(6, 70, 99, 0.9);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border: 1px solid rgba(6, 70, 99, 0.01);
+  border-radius: 10px;
 
   nav {
     height: 100%;

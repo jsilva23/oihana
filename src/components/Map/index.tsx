@@ -22,7 +22,13 @@ const Map = () => {
     <MapContainer
       center={[51.505, -0.09]}
       zoom={13}
-      style={{ height: '100%', width: '100%', borderRadius: '16px' }}
+      style={{
+        height: '85vh',
+        width: '100%',
+        maxWidth: '1210px',
+        borderRadius: '16px',
+        position: 'fixed',
+      }}
     >
       <CustomTileLayer />
 
