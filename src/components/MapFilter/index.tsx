@@ -111,7 +111,7 @@ const MapFilter = ({ mapFilterStatus, setMapFilterStatus }: MenuProps) => {
 };
 
 const FilterBox = styled.div`
-  height: 100%;
+  height: 82.5vh;
   color: #041c32;
   .filter {
     font-size: 1.3rem;
@@ -121,7 +121,7 @@ const FilterBox = styled.div`
     width: 45rem;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 100;
     z-index: 700;
 
     background: #fff;

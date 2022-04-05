@@ -17,9 +17,6 @@ const Layout = ({ children }: LayoutProps) => {
             <Sidebar />
           </div>
           <div className='col'>{children}</div>
-          <div className='col'>
-            <RightSidebar />
-          </div>
         </div>
       </Container>
     </>

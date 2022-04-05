@@ -61,6 +61,10 @@ const Header = () => {
 };
 
 const MainHeader = styled.header`
+  position: fixed;
+  top: 0;
+  right: 0;
+
   height: 10vh;
   width: 100%;
   margin-bottom: 30px;
@@ -68,6 +72,8 @@ const MainHeader = styled.header`
 
   display: flex;
   align-items: center;
+
+  z-index: 999999;
 
   .logo {
     h1 {
