@@ -126,13 +126,12 @@ const Search = () => {
 };
 
 const SearchWrapper = styled.div`
-  background: rgba(6, 70, 99, 0.6);
-
+  background: rgba(6, 70, 99, 0.9);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
-  border: 1px solid rgba(6, 70, 99, 0.01);
-
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
   padding: 32px 24px;
   border-radius: 10px;
 
@@ -146,12 +145,12 @@ const SearchWrapper = styled.div`
       position: relative;
       height: 50px;
       /* From https://css.glass */
-      background: rgba(6, 70, 99, 0.6);
+      background: #d7e4ec;
       border: 1px solid rgba(6, 70, 99, 0.01);
       border-radius: 5px;
       padding: 0 4px;
 
-      color: #e5edf3;
+      color: rgba(6, 70, 99, 0.9);
     }
 
     .field-placeholder {
