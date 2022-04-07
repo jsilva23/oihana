@@ -6,13 +6,15 @@ import RightSidebar from '../Sidebars/RightSidebar';
 const HomeFeed = () => {
   return (
     <FeedBox>
-      <div className='posts'>
+      <div>
         <Search />
-        <FeedPost />
-        <FeedPost />
-        <FeedPost />
-        <FeedPost />
-        <FeedPost />
+        <div className='posts'>
+          <FeedPost />
+          <FeedPost />
+          <FeedPost />
+          <FeedPost />
+          <FeedPost />
+        </div>
       </div>
 
       <div className='adds'>
