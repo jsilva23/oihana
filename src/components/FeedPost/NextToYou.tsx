@@ -47,19 +47,19 @@ const NextToYou = () => {
 
 const NextTo = styled.div`
   width: 100%;
-  height: 115px;
+  height: 135px;
   padding: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
   background: #f4faff;
 
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
 
   .image {
-    width: 115px;
+    width: 135px;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
@@ -73,15 +73,14 @@ const NextTo = styled.div`
   .image-two {
     flex: 1;
     height: 100%;
-    padding: 5px 10px;
+    padding: 10px 15px;
 
     .price {
       font-weight: bold;
-      margin-bottom: -4px;
     }
 
     .address {
-      margin-bottom: 14px;
+      margin-bottom: 20px;
       font-size: 1.5rem;
       color: rgba(0, 0, 0, 0.5);
     }

@@ -52,13 +52,7 @@ const StylesSidebar = styled.aside`
   padding: 32px 24px;
 
   background: rgba(6, 70, 99, 0.9);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
-
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-    rgb(209, 213, 219) 0px 0px 0px 1px inset;
 
   nav {
     height: 100%;
