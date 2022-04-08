@@ -127,14 +127,9 @@ const Search = () => {
 
 const SearchWrapper = styled.div`
   background: rgba(6, 70, 99, 0.9);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-    rgb(209, 213, 219) 0px 0px 0px 1px inset;
   padding: 32px 24px;
   border-radius: 10px;
-
+  margin-bottom: 24px;
   form {
     display: grid;
     grid-template-columns: 19.7% 25% 33.3% auto;

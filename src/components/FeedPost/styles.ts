@@ -5,14 +5,8 @@ import { RiMessage2Line } from 'react-icons/ri';
 export const Panel = styled.div`
   background: #e5edf3;
   overflow: hidden;
-  margin-top: 16px;
+  margin-top: 15px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-    rgb(209, 213, 219) 0px 0px 0px 1px inset;
-
-  &.no-shadow {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 3px rgba(0, 0, 0, 0.05);
-  }
 `;
 
 export const Row = styled.div`
